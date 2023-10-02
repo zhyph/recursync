@@ -1,3 +1,9 @@
+"""
+rsubsync.py
+
+This module provides a command-line interface for synchronizing subtitles with their corresponding video files.
+"""
+
 import fnmatch
 import os
 import subprocess
@@ -120,9 +126,8 @@ def video_file_exists(file_base):
     video_match = get_matching_video_extension(file_base)
     if video_match is not None:
         return video_match
-    else:
-        print(f"There's no video file for: {file_base}")
-        return False
+    print(f"There's no video file for: {file_base}")
+    return False
 
 
 def handle_sync_error(subtitle, error):
@@ -134,6 +139,9 @@ def handle_sync_error(subtitle, error):
 
 
 def main():
+    """
+    Starts the synchronization process in the specified path.
+    """
     print(f"Starting sync process in path: '{SETTINGS['PATH_TO_SYNC']}'")
 
     try:
