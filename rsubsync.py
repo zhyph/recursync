@@ -27,7 +27,6 @@ SETTINGS = {
     "SUBSYNC_PATH": "subsync",
     "PATH_TO_SYNC": args.path,
     "VIDEO_EXTENSIONS": [".mkv", ".mp4", ".avi"],
-    "FAILED_SUFFIX": ".failed",
     "USED_SUBS_FILE": os.path.join(
         os.path.dirname(
             os.path.realpath(__file__)
