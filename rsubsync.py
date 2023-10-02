@@ -1,7 +1,9 @@
 """
 rsubsync.py
 
-This module provides a command-line interface for synchronizing subtitles with their corresponding video files.
+This module 
+provides a command-line interface for 
+synchronizing subtitles with their corresponding video files.
 """
 
 import fnmatch
